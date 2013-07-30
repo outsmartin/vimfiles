@@ -1,0 +1,11 @@
+ag.vim
+neobundle.vim
+rails.vim
+syntastic
+tcomment_vim
+unite.vim
+vim-airline
+vim-colors-solarized
+vim-fugitive
+vim-ruby
+vimproc
