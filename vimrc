@@ -18,14 +18,23 @@ NeoBundle 'Shougo/vimproc', {
       \ }
 
 " Bundles here:
-" Productivity
+" Productivity:
 NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'rails.vim'
-NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'unite.vim'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'ervandew/supertab'
+
+" Languages:
+NeoBundle 'rails.vim'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'jcf/vim-latex'
+NeoBundle 'ivalkeen/vim-simpledb'
+
+" gist support
+NeoBundle 'mattn/webapi-vim'
+NeoBundle 'mattn/gist-vim'
 
 " eyecandy
 NeoBundle 'bling/vim-airline'
@@ -36,8 +45,8 @@ NeoBundleCheck
 
 let mapleader = ","
 colorscheme solarized
-set background=dark
-let g:solarized_termcolors=256
+set background=light
+let g:solarized_termcolors=16
 
 " settings
 filetype plugin indent on     " Required!
@@ -130,13 +139,6 @@ if has("autocmd")
   au BufNewFile,BufRead /etc/init/*.conf set ft=upstart
 endif
 
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_fugitive_prefix = ' '
-let g:airline_readonly_symbol = ''
-let g:airline_linecolumn_prefix = ' '
 let g:airline_powerline_fonts = 1
 set laststatus=2
 
@@ -166,3 +168,7 @@ set wildmenu
 if exists('&wildignorecase')
   set wildignorecase
 endif
+
+" Supertab Setup
+
+let g:SuperTabDefaultCompletionType = "<c-n>"

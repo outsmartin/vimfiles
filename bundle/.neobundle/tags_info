@@ -1,11 +1,16 @@
 ag.vim
+gist-vim
 neobundle.vim
 rails.vim
+supertab
 syntastic
 tcomment_vim
 unite.vim
 vim-airline
 vim-colors-solarized
 vim-fugitive
+vim-latex
 vim-ruby
+vim-simpledb
 vimproc
+webapi-vim
